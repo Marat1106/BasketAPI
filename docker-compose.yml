@@ -7,12 +7,12 @@ services:
     image: ${DOCKER_REGISTRY-}catalog3api
     build:
       context: .
-      dockerfile: src/Catalog/Catalog3.API/Dockerfile
+      dockerfile: src/Catalog.API/Catalog3.API/Dockerfile
   basketdb:
     image: redis
   basket.api:
     image: ${DOCKER_REGISTRY-}basketapi
     build:
       context: .
-      dockerfile: src/Basket/Basket.API/Dockerfile
+      dockerfile: src/Basket.API/Basket.API/Dockerfile
 
